@@ -1,0 +1,66 @@
+.banner{
+    background: $footer-bg;
+    padding: 50px 15px;
+
+    @media screen and (min-width: $lg){
+        position: relative;
+        .overlay{
+            display: block !important;
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 80%;
+            min-height: 100%;
+        }
+        padding-bottom: 100px !important;
+        
+    }
+    @media screen  and (min-width: $xl){
+        .contents{
+            width: 40% !important;
+            height: 300px;
+            margin-left: 20% !important;
+        }
+    }
+    .overlay{
+        display: none;
+    }
+    .contents{
+        margin: 0 auto;
+        width: 80%;
+        color: white;
+
+        @media screen and (min-width: $md-lg){
+            font-size: 1.1rem;
+            h2{
+                font-size: 2.5rem !important;
+            }
+            a{
+                width: 160px !important;
+            }
+        }
+
+        h2{
+            font-size: 2.25rem;
+            text-transform: uppercase;
+        }
+        p{
+            letter-spacing: 1px;
+        }
+        p:first-of-type{
+            font-weight: bold;
+        }
+        a{
+            display: block;
+            width: 150px;
+            margin-top: 20px;
+            background: white;
+            color: $footer-bg;
+            padding: 12px;
+            border-radius: 5px;
+            i{
+                margin-left: 5px;
+            }
+        }
+    }
+}

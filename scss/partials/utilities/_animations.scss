@@ -1,0 +1,44 @@
+@keyframes carousel{
+    0%{
+        transform: translateX(0);
+    }
+    8.3%{
+        transform: translateX(0);
+    }
+    16.6%{
+        transform: translateX(-100vw);
+    }
+    24.9%{
+        transform: translateX(-100vw);
+    }
+    33.2%{
+        transform: translateX(-200vw);
+    }
+    41.5%{
+        transform: translateX(-200vw);
+    }
+    49.8%{
+        transform: translateX(-300vw);
+    }
+    58.1%{
+        transform: translateX(-300vw);
+    }
+    66.4%{
+        transform: translateX(-400vw);
+    }
+    74.7%{
+        transform: translateX(-400vw);
+    }
+    83%{
+        transform: translateX(-500vw);
+    }
+    91.3%{
+        transform: translateX(-500vw);
+    }
+    99.6%{
+        transform: translateX(-600vw);
+    }
+    100%{
+        transform: translateX(-600vw);
+    }
+}

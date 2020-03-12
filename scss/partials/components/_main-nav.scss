@@ -1,0 +1,156 @@
+.main-nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    @media screen and (min-width: $md-lg){
+        height: 110px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .logo{
+        margin-right: auto;
+        max-width: 50vw;
+    }
+    a{
+        display: none;
+        margin-right: 20px;
+        padding: 18px 10px;
+        background: #4183d7;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        height: 54px;
+        border-radius: 3px;
+
+        &:hover{
+            background: #3b76c4;
+        }
+        i{
+            margin-right: 10px;
+        }
+
+        @media screen and (min-width: $lg){
+            display: inline-block;
+        }
+        &[href*="contact"]{
+            background-color: #999aa2;
+            margin-right: -120px;
+
+            &:hover{
+                background: #7f8086;
+            }
+            @media screen and (min-width: $xl){
+                margin-right: 20px;
+            }
+        }
+    }
+    .icon-phone{
+        margin-right: 50px;
+        height: 54px;
+        width: 54px;
+        font-size: 30px;
+        transform: scaleX(-1);
+
+        @media screen and (min-width: $md){
+            display: none;
+        }
+    }
+    .search-bar{
+        order: 2;
+        width: 100%;
+        position: relative;
+        border: 3px solid rgba(180, 180, 180, 0.3);
+        border-radius: 3px;
+        margin-top: 10px;
+
+        @media screen and (min-width: $md){
+            order: 0;
+            width: 30%;
+            margin: auto 20px auto 0;
+            height: 54px;
+            border: none;
+        }
+        @media screen and (min-width: $lg){
+            width: 200px;
+        }
+
+        input{
+            width: 100%;
+            float: right;
+            background-color: rgba(180, 180, 180, 0.1);
+            padding: 10px;
+            color: rgba(180, 180, 180, 1);
+            font-family: "Lato", "Open Sans", sans-serif;
+
+            &:focus{
+                outline: none;
+            }
+
+            @media screen and (min-width: $md){
+                height: 54px;
+                background: none;
+                border: 1px solid rgba(153, 154, 162, 0.5);
+                border-radius: 3px 0 0 3px;
+            }
+            @media screen and (min-width: $lg){
+                display: none;
+            }
+            @media screen and (min-width: $xl){
+                display: block;
+            }
+        }
+        button{
+            position: absolute;
+            right: 0;
+            padding-right: 10px;
+            height: 100%;
+            cursor: pointer;
+
+            &:hover{
+                background: #7f8086;
+            }
+            @media screen and (min-width: $md){
+                height: 54px;
+                margin-bottom: 5px;
+                padding: 0;
+                width: 30%;
+                border-radius: 0px 3px 3px 0;
+                color: white;
+                background: #999aa2;
+            }
+            @media screen and (min-width: $lg){
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .hamburger{
+        color: white;
+        height: 54px;
+        background: rgb(61, 61, 61);
+        width: 60px;
+
+        div {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+            margin-left: 13px;
+        }
+        span{
+            margin-left: 15px;
+            font-size: 13px;
+            position: relative;
+            bottom: 5px;
+        }
+        &:hover{
+            background: #000000;
+        }
+    }
+}

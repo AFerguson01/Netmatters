@@ -1,0 +1,171 @@
+.secondary-nav{
+    height: 100px;
+    background: #333645;
+    display: none;
+
+    @media screen and (min-width: $md-lg){
+        display: block;   
+    }
+    .sec-nav-cont{
+        height: 100px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        li:hover{
+            ul[class*="dropdown"]{
+                display: block;
+            }
+        }
+
+        .category{
+            height: 100px;
+            width: 200px;
+            max-width: 200px;
+            border-left: 1px solid rgba(255,255,255,0.1);
+
+            &[class*="category"]:last-child{
+                border-right: 1px solid rgba(255,255,255,0.1);
+            }
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 20px;
+
+            &:hover{
+                i{
+                    color: white;
+                }
+            }
+
+            i{
+                align-self: center;
+                margin-bottom: 10px;
+            }
+            span{
+                color: white;
+                align-self: center;
+                font-size: 12px;
+                text-transform: uppercase;
+                &:last-of-type{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        // WEB DESIGN -------------------------/
+        .web-design{
+
+            &:hover{
+                background-color: #926fb1;
+            }
+        
+            i{
+                color: #926fb1;
+            }
+        }
+
+        // IT SUPPORT -------------------------/
+        .it-support{
+
+            &:hover{
+                background-color: #4183d7;
+            }
+        
+            i{
+                color: #4183d7;
+            }
+        }
+
+        // TELECOMS SERVICES -------------------------/
+        .telecoms-services{
+
+            &:hover{
+                background-color: #d64541;
+            }
+        
+            i{
+                color: #d64541;
+            }
+        }
+
+        // BESPOKE SOFTWARE -------------------------/
+        .bespoke-software{
+
+            &:hover{
+                background-color: #67809f;
+            }
+        
+            i{
+                color: #67809f;
+            }
+        }
+
+        // DIGITAL MARKETING -------------------------/
+        .digital-marketing{
+
+            &:hover{
+                background-color: #2ecc71;
+            }
+        
+            i{
+                color: #2ecc71;
+            }
+        }
+
+        // CYBER SECURITY -------------------------/
+        .cyber-security{
+
+            &:hover{
+                background-color: #f62459;
+            }
+            border-right: 1px solid rgba(255,255,255,0.1);
+        
+            i{
+                color: #f62459;
+            }
+        }
+    }
+
+    // DROPDOWN NAVS ------------------/
+    ul[class*="dropdown"]{
+        z-index: 3;
+        display: none;
+        width: 100%;
+        background: red;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        text-transform: uppercase;
+        div{
+            height: 100%;
+            width: 62.5%;
+            color: white;
+            margin-left: 5vw;
+            display: flex;
+            li,
+            span{
+                align-self: center;
+                margin-right: 30px;
+            }
+            span{
+                font-size: 30px;
+            }
+            a{
+                cursor: pointer;
+            }
+
+            @media screen and (min-width: $xxl){
+                margin: 0 auto !important;
+            }
+        }        
+    }
+    .web-dropdown{ background-color: #79539a !important; }
+    .it-dropdown{ background-color: #286abd !important; }
+    .telecoms-dropdown{ background-color: #bc2c28 !important; }
+    .software-dropdown{ background-color: #526781 !important; }
+    .marketing-dropdown{ background-color: #25a25a !important; }
+    .security-dropdown{ background-color: #de093f !important; }
+}

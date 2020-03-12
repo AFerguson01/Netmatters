@@ -1,0 +1,112 @@
+.carousel{
+    width: 100%;
+    overflow: hidden;
+
+    .contents li{
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+
+        img{
+            min-width: 100%;
+            height: 100%
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7721463585434174) 12%, rgba(0,0,0,0.5760679271708684) 18%, rgba(0,0,0,0.469625350140056) 66%, rgba(0,0,0,0.23713235294117652) 100%);
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .card{
+            position: absolute;
+            top: 30%;
+            z-index: 3;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            width: 50%;
+            left: 25%;
+
+            @media screen and (min-width: $md-lg){
+                text-align: left;
+                width: 25%;
+                left: 20%;
+                a{
+                    margin: 0 !important;
+                }
+            }
+
+            h1{
+                text-transform: uppercase;
+                
+            }
+            a{
+                display: block;
+                width: 230px;
+                color: white;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                padding: 20px 10px;
+                border-radius: 3px;
+                margin: 0 auto;
+
+                i{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .web-design a,
+    .web-design-wrap a{ background-color: $cl-web-design; &:hover{ background-color: $cl-web-design-dark; } }
+    .it-support a{ background-color: $cl-it-support; &:hover{ background-color: $cl-it-support-dark; } }
+    .telecoms-services a{ background-color: $cl-telecoms-services; &:hover{ background-color: $cl-telecoms-services-dark; } }
+    .bespoke-software a{ background-color: $cl-bespoke-software; &:hover{ background-color: $cl-bespoke-software-dark; } }
+    .digital-marketing a{ background-color: $cl-digital-marketing; &:hover{ background-color: $cl-digital-marketing-dark; } }
+    .cyber-security a{ background-color: $cl-cyber-security; &:hover{ background-color: $cl-cyber-security-dark; } }
+
+    .contents{
+        min-width: 100%;
+        height: calc(100vh - 128px);
+        @media screen and (min-width: $md){
+            height: calc(100vh - 93px);
+        }
+        @media screen and (min-width: $md-lg){
+            height: calc(100vh - 210px);
+        }
+
+        position: relative;
+        .web-design{
+            left: 0;
+        }
+        .it-support{
+            left: 100vw;
+        }
+        .telecoms-services{
+            left: 200vw;
+        }
+        .bespoke-software{
+            left: 300vw;
+        }
+        .digital-marketing{
+            left: 400vw;
+        }
+        .cyber-security{
+            left: 500vw;
+        }
+        .web-design-wrap{
+            left: 600vw;
+        }
+
+        animation: carousel 30s infinite;
+
+        overflow: hidden;
+        width: 700vw;
+    }
+}
