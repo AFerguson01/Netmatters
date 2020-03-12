@@ -708,7 +708,7 @@ a {
       z-index: 2; }
     .carousel .contents li .card {
       position: absolute;
-      top: 30%;
+      top: 0%;
       z-index: 3;
       color: white;
       font-size: 1.5rem;
@@ -719,7 +719,8 @@ a {
         .carousel .contents li .card {
           text-align: left;
           width: 25%;
-          left: 20%; }
+          left: 20%;
+          top: 30%; }
           .carousel .contents li .card a {
             margin: 0 !important; } }
       .carousel .contents li .card h1 {
