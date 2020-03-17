@@ -7,7 +7,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -413,7 +413,7 @@ ul, ol {
 
 * {
   box-sizing: border-box;
-  font-family: "Lato", "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   background: none;
   border: none;
@@ -471,16 +471,19 @@ a {
     margin-right: auto;
     max-width: 50vw; }
   .main-nav a {
+    width: 230px;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    border-radius: 5px;
     display: none;
     margin-right: 20px;
-    padding: 18px 10px;
     background: #4183d7;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    height: 54px;
-    border-radius: 3px; }
+    font-size: 1rem;
+    width: 150px; }
+    .main-nav a i {
+      margin-left: 10px; }
     .main-nav a:hover {
       background: #3b76c4; }
     .main-nav a i {
@@ -650,40 +653,41 @@ a {
     z-index: 3;
     display: none;
     width: 100%;
-    background: red;
     height: 60px;
     position: absolute;
     left: 0;
     text-transform: uppercase; }
-    .secondary-nav ul[class*="dropdown"] div {
+    .secondary-nav ul[class*="dropdown"] > li {
+      height: 100%; }
+    .secondary-nav ul[class*="dropdown"] ul {
       height: 100%;
       width: 62.5%;
       color: white;
       margin-left: 5vw;
       display: flex; }
-      .secondary-nav ul[class*="dropdown"] div li,
-      .secondary-nav ul[class*="dropdown"] div span {
+      .secondary-nav ul[class*="dropdown"] ul li,
+      .secondary-nav ul[class*="dropdown"] ul span {
         align-self: center;
         margin-right: 30px; }
-      .secondary-nav ul[class*="dropdown"] div span {
+      .secondary-nav ul[class*="dropdown"] ul li:nth-child(even) {
         font-size: 30px; }
-      .secondary-nav ul[class*="dropdown"] div a {
+      .secondary-nav ul[class*="dropdown"] ul a {
         cursor: pointer; }
       @media screen and (min-width: 1500px) {
-        .secondary-nav ul[class*="dropdown"] div {
-          margin: 0 auto !important; } }
+        .secondary-nav ul[class*="dropdown"] ul {
+          margin: 0 auto; } }
   .secondary-nav .web-dropdown {
-    background-color: #79539a !important; }
+    background-color: #79539a; }
   .secondary-nav .it-dropdown {
-    background-color: #286abd !important; }
+    background-color: #286abd; }
   .secondary-nav .telecoms-dropdown {
-    background-color: #bc2c28 !important; }
+    background-color: #bc2c28; }
   .secondary-nav .software-dropdown {
-    background-color: #526781 !important; }
+    background-color: #526781; }
   .secondary-nav .marketing-dropdown {
-    background-color: #25a25a !important; }
+    background-color: #25a25a; }
   .secondary-nav .security-dropdown {
-    background-color: #de093f !important; }
+    background-color: #de093f; }
 
 .carousel {
   width: 100%;
@@ -715,14 +719,6 @@ a {
       text-align: center;
       width: 50%;
       left: 25%; }
-      @media screen and (min-width: 1160px) {
-        .carousel .contents li .card {
-          text-align: left;
-          width: 25%;
-          left: 20%;
-          top: 30%; }
-          .carousel .contents li .card a {
-            margin: 0 !important; } }
       .carousel .contents li .card h1 {
         text-transform: uppercase; }
       .carousel .contents li .card a {
@@ -732,10 +728,17 @@ a {
         font-size: 1.3rem;
         text-transform: uppercase;
         padding: 20px 10px;
-        border-radius: 3px;
-        margin: 0 auto; }
+        border-radius: 5px; }
         .carousel .contents li .card a i {
           margin-left: 10px; }
+      @media screen and (min-width: 1160px) {
+        .carousel .contents li .card {
+          text-align: left;
+          width: 25%;
+          left: 20%;
+          top: 30%; }
+          .carousel .contents li .card a {
+            margin: 0; } }
   .carousel .web-design a,
   .carousel .web-design-wrap a {
     background-color: #926fb1; }
@@ -796,9 +799,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1500px) {
     .cards {
-      width: 70% !important; } }
+      width: 70%; } }
   .cards .card {
     border: 1px solid rgba(153, 154, 162, 0.5);
     text-align: center;
@@ -827,13 +830,16 @@ a {
       line-height: 1.4;
       font-size: 0.8125rem; }
     .cards .card a {
-      height: 50px;
-      width: 140px;
-      font-size: 1.063rem;
-      text-transform: uppercase;
+      width: 230px;
       color: white;
-      line-height: 50px;
-      border-radius: 5px; }
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      padding: 20px 10px;
+      border-radius: 5px;
+      width: 140px;
+      font-size: 1rem; }
+      .cards .card a i {
+        margin-left: 10px; }
     .cards .card:hover {
       color: white; }
       .cards .card:hover div {
@@ -917,7 +923,7 @@ a {
   .cards .digital-marketing {
     width: 100%;
     margin: 30px 0; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
       .cards .bespoke-software,
       .cards .it-support,
       .cards .digital-marketing {
@@ -928,7 +934,7 @@ a {
   .cards .developer-training {
     width: 100%;
     margin-bottom: 30px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
       .cards .telecoms-services,
       .cards .web-design,
       .cards .cyber-security,
@@ -946,33 +952,13 @@ a {
   padding: 50px 15px; }
   @media screen and (min-width: 992px) {
     .banner {
-      position: relative;
-      padding-bottom: 100px !important; }
-      .banner .overlay {
-        display: block !important;
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-width: 80%;
-        min-height: 100%; } }
-  @media screen and (min-width: 1300px) {
-    .banner .contents {
-      width: 40% !important;
-      height: 300px;
-      margin-left: 20% !important; } }
-  .banner .overlay {
-    display: none; }
+      background: #333645 url(/img/banner-branding.png) no-repeat;
+      background-size: cover;
+      padding-bottom: 100px; } }
   .banner .contents {
     margin: 0 auto;
     width: 80%;
     color: white; }
-    @media screen and (min-width: 1160px) {
-      .banner .contents {
-        font-size: 1.1rem; }
-        .banner .contents h2 {
-          font-size: 2.5rem !important; }
-        .banner .contents a {
-          width: 160px !important; } }
     .banner .contents h2 {
       font-size: 2.25rem;
       text-transform: uppercase; }
@@ -981,15 +967,29 @@ a {
     .banner .contents p:first-of-type {
       font-weight: bold; }
     .banner .contents a {
+      width: 230px;
+      color: white;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      padding: 20px 10px;
+      border-radius: 5px;
       display: block;
-      width: 150px;
+      width: 200px;
       margin-top: 20px;
       background: white;
-      color: #333645;
-      padding: 12px;
-      border-radius: 5px; }
+      color: #333645; }
       .banner .contents a i {
-        margin-left: 5px; }
+        margin-left: 10px; }
+    @media screen and (min-width: 1160px) {
+      .banner .contents {
+        font-size: 1.1rem; }
+        .banner .contents h2 {
+          font-size: 2.5rem; } }
+  @media screen and (min-width: 1300px) {
+    .banner .contents {
+      width: 40%;
+      height: 400px;
+      margin-left: 20%; } }
 
 .latest {
   width: 100%;
@@ -1027,41 +1027,41 @@ a {
       height: 100%;
       display: flex;
       flex-direction: column; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1300px) {
         .latest .articles .article {
           width: 30%; } }
       .latest .articles .article h4 {
         font-weight: bold; }
       .latest .articles .article:nth-child(1) h4 {
         color: #67809f; }
-      .latest .articles .article:nth-child(1) .content a {
+      .latest .articles .article:nth-child(1) .content .btn {
         background: #67809f; }
-        .latest .articles .article:nth-child(1) .content a:hover {
+        .latest .articles .article:nth-child(1) .content .btn:hover {
           background: #526781; }
-      .latest .articles .article:nth-child(1) .img a {
+      .latest .articles .article:nth-child(1) .img .btn {
         background: #67809f; }
       .latest .articles .article:nth-child(2) h4 {
         color: #4183d7; }
-      .latest .articles .article:nth-child(2) .content a {
+      .latest .articles .article:nth-child(2) .content .btn {
         background: #4183d7; }
-        .latest .articles .article:nth-child(2) .content a:hover {
+        .latest .articles .article:nth-child(2) .content .btn:hover {
           background: #286abd; }
-      .latest .articles .article:nth-child(2) .img a {
+      .latest .articles .article:nth-child(2) .img .btn {
         background: #4183d7; }
       .latest .articles .article:nth-child(3) {
         display: block; }
         .latest .articles .article:nth-child(3) h4 {
           color: #926fb1; }
-        .latest .articles .article:nth-child(3) .content a {
+        .latest .articles .article:nth-child(3) .content .btn {
           background: #926fb1; }
-          .latest .articles .article:nth-child(3) .content a:hover {
+          .latest .articles .article:nth-child(3) .content .btn:hover {
             background: #79539a; }
-        .latest .articles .article:nth-child(3) .img a {
+        .latest .articles .article:nth-child(3) .img .btn {
           background: #926fb1; }
         @media screen and (min-width: 768px) {
           .latest .articles .article:nth-child(3) {
             display: none; } }
-        @media screen and (min-width: 1160px) {
+        @media screen and (min-width: 1300px) {
           .latest .articles .article:nth-child(3) {
             display: block; } }
       .latest .articles .article .img {
@@ -1086,6 +1086,7 @@ a {
         .latest .articles .article .img:hover img {
           transform: scale(1.1); }
         .latest .articles .article .img div {
+          cursor: pointer;
           transition: 0.2s ease;
           position: absolute;
           top: 0;
@@ -1102,17 +1103,24 @@ a {
         height: 220px;
         display: flex;
         flex-direction: column; }
-        .latest .articles .article .content a {
+        .latest .articles .article .content .title {
+          font-weight: bold; }
+          .latest .articles .article .content .title:hover {
+            text-decoration: underline;
+            cursor: pointer; }
+        .latest .articles .article .content .btn {
+          width: 230px;
+          color: white;
+          font-size: 1.3rem;
+          text-transform: uppercase;
+          padding: 20px 10px;
+          border-radius: 5px;
           margin-top: auto;
           display: block;
-          height: 50px;
           width: 140px;
-          font-size: 1.063rem;
-          text-transform: uppercase;
-          color: white;
-          line-height: 50px;
-          border-radius: 5px;
-          text-align: center; }
+          font-size: 1.063rem; }
+          .latest .articles .article .content .btn i {
+            margin-left: 10px; }
         @media screen and (min-width: 768px) {
           .latest .articles .article .content {
             height: 310px; } }
@@ -1194,7 +1202,7 @@ a {
     .sponsors img:hover {
       filter: grayscale(0%); }
   .sponsors .sponsor:hover .box {
-    display: flex !important; }
+    display: flex; }
   .sponsors .sponsor:hover .box-arrow {
     display: block; }
 

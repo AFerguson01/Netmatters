@@ -43,7 +43,7 @@
             display: flex;
             flex-direction: column;
 
-            @media screen and (min-width: $md){
+            @media screen and (min-width: $xl){
                 width: 30%;
             }
             
@@ -55,13 +55,13 @@
                 h4{
                     color: $cl-bespoke-software;
                 }
-                .content a{
+                .content .btn{
                     background: $cl-bespoke-software;
                     &:hover{
                         background: $cl-bespoke-software-dark;
                     }
                 }
-                .img a{
+                .img .btn{
                     background: $cl-bespoke-software;
                 }
             }
@@ -70,13 +70,13 @@
                 h4{
                     color: $cl-it-support;
                 }
-                .content a{
+                .content .btn{
                     background: $cl-it-support;
                     &:hover{
                         background: $cl-it-support-dark;
                     }
                 }
-                .img a{
+                .img .btn{
                     background: $cl-it-support;
                 }
             }
@@ -85,20 +85,20 @@
                 h4{
                     color: $cl-web-design;
                 }
-                .content a{
+                .content .btn{
                     background: $cl-web-design;
                     &:hover{
                         background: $cl-web-design-dark;
                     }
                 }
-                .img a{
+                .img .btn{
                     background: $cl-web-design;
                 }
                 display: block;
                 @media screen and (min-width: $md){
                     display: none;
                 }
-                @media screen and (min-width: $md-lg){
+                @media screen and (min-width: $xl){
                     display: block;
                 }
             }
@@ -130,6 +130,7 @@
                 transform: scale(1.1);
                 }
                 div{
+                    cursor: pointer;
                     transition: 0.2s ease;
                     position: absolute;
                     top: 0;
@@ -150,17 +151,19 @@
                 display: flex;
                 flex-direction: column;
             
-                a{
+                .title{
+                    font-weight: bold;
+                    &:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                .btn{
+                    @include btn;
                     margin-top: auto;
                     display: block;
-                    height: 50px;
                     width: 140px;
                     font-size: 1.063rem;
-                    text-transform: uppercase;
-                    color: white;
-                    line-height: 50px;
-                    border-radius: 5px;
-                    text-align: center;
                 }
 
                 @media screen and (min-width: $md){

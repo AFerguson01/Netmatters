@@ -134,12 +134,14 @@
         z-index: 3;
         display: none;
         width: 100%;
-        background: red;
         height: 60px;
         position: absolute;
         left: 0;
         text-transform: uppercase;
-        div{
+        >li{
+            height: 100%;
+        }
+        ul{
             height: 100%;
             width: 62.5%;
             color: white;
@@ -150,7 +152,7 @@
                 align-self: center;
                 margin-right: 30px;
             }
-            span{
+            li:nth-child(even){
                 font-size: 30px;
             }
             a{
@@ -158,14 +160,14 @@
             }
 
             @media screen and (min-width: $xxl){
-                margin: 0 auto !important;
+                margin: 0 auto;
             }
         }        
     }
-    .web-dropdown{ background-color: #79539a !important; }
-    .it-dropdown{ background-color: #286abd !important; }
-    .telecoms-dropdown{ background-color: #bc2c28 !important; }
-    .software-dropdown{ background-color: #526781 !important; }
-    .marketing-dropdown{ background-color: #25a25a !important; }
-    .security-dropdown{ background-color: #de093f !important; }
+    .web-dropdown{ background-color: #79539a; }
+    .it-dropdown{ background-color: #286abd; }
+    .telecoms-dropdown{ background-color: #bc2c28; }
+    .software-dropdown{ background-color: #526781; }
+    .marketing-dropdown{ background-color: #25a25a; }
+    .security-dropdown{ background-color: #de093f; }
 }

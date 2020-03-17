@@ -34,32 +34,22 @@
             width: 50%;
             left: 25%;
 
-            @media screen and (min-width: $md-lg){
-                text-align: left;
-                width: 25%;
-                left: 20%;
-                top: 30%;
-                a{
-                    margin: 0 !important;
-                }
-            }
-
             h1{
                 text-transform: uppercase;
                 
             }
             a{
                 display: block;
-                width: 230px;
-                color: white;
-                font-size: 1.3rem;
-                text-transform: uppercase;
-                padding: 20px 10px;
-                border-radius: 3px;
-                margin: 0 auto;
+                @include btn;
+            }
 
-                i{
-                    margin-left: 10px;
+            @media screen and (min-width: $md-lg){
+                text-align: left;
+                width: 25%;
+                left: 20%;
+                top: 30%;
+                a{
+                    margin: 0;
                 }
             }
         }

@@ -17,16 +17,12 @@
         max-width: 50vw;
     }
     a{
+        @include btn;
         display: none;
         margin-right: 20px;
-        padding: 18px 10px;
         background: #4183d7;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-weight: 600;
-        height: 54px;
-        border-radius: 3px;
+        font-size: 1rem;
+        width: 150px;
 
         &:hover{
             background: #3b76c4;
