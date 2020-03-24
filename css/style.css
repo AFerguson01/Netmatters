@@ -712,7 +712,7 @@ a {
       z-index: 2; }
     .carousel .contents li .card {
       position: absolute;
-      top: 0%;
+      top: 30vh;
       z-index: 3;
       color: white;
       font-size: 1.5rem;
