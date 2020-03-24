@@ -1,13 +1,39 @@
-.carousel{
+.slick-carousel{
     width: 100%;
     overflow: hidden;
 
-    .contents li{
+    .slick-dots{
+        position: absolute;
+        bottom: 20%;
+
+        @media screen and (min-width: $md-lg){
+            bottom: 10%;
+        }
+        li{
+            margin: 0 10px;
+        }
+        li button{
+            border: 2px solid white;
+            border-radius: 50%;
+            height: 26px;
+            width: 27px;
+            &:before{
+                color: white;
+                font-size: 10px;
+                height: 100%;
+                width: 100%;
+                padding: 4px 0 0 4px;
+            }
+        }
+    }
+
+    .contents{
         height: 100%;
         width: 100vw;
-        position: absolute;
-        top: 0;
 
+        div{
+            position: relative;
+        }
         img{
             min-width: 100%;
             height: 100%
@@ -26,7 +52,7 @@
 
         .card{
             position: absolute;
-            top: 30vh;
+            top: 20%;
             z-index: 3;
             color: white;
             font-size: 1.5rem;
@@ -41,15 +67,16 @@
             a{
                 display: block;
                 @include btn;
+                margin: 0 auto;
             }
 
             @media screen and (min-width: $md-lg){
-                text-align: left;
                 width: 25%;
-                left: 20%;
-                top: 30%;
+                top: 25%;
+                text-align: left;
+                left: 15%;
                 a{
-                    margin: 0;
+                    margin: 0 0;
                 }
             }
         }
@@ -71,33 +98,7 @@
         @media screen and (min-width: $md-lg){
             height: calc(100vh - 210px);
         }
-
-        position: relative;
-        .web-design{
-            left: 0;
-        }
-        .it-support{
-            left: 100vw;
-        }
-        .telecoms-services{
-            left: 200vw;
-        }
-        .bespoke-software{
-            left: 300vw;
-        }
-        .digital-marketing{
-            left: 400vw;
-        }
-        .cyber-security{
-            left: 500vw;
-        }
-        .web-design-wrap{
-            left: 600vw;
-        }
-
-        animation: carousel 30s infinite;
-
-        overflow: hidden;
-        width: 700vw;
     }
 }
+
+

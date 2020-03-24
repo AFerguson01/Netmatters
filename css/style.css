@@ -689,18 +689,37 @@ a {
   .secondary-nav .security-dropdown {
     background-color: #de093f; }
 
-.carousel {
+.slick-carousel {
   width: 100%;
   overflow: hidden; }
-  .carousel .contents li {
-    height: 100%;
-    width: 100vw;
+  .slick-carousel .slick-dots {
     position: absolute;
-    top: 0; }
-    .carousel .contents li img {
+    bottom: 20%; }
+    @media screen and (min-width: 1160px) {
+      .slick-carousel .slick-dots {
+        bottom: 10%; } }
+    .slick-carousel .slick-dots li {
+      margin: 0 10px; }
+    .slick-carousel .slick-dots li button {
+      border: 2px solid white;
+      border-radius: 50%;
+      height: 26px;
+      width: 27px; }
+      .slick-carousel .slick-dots li button:before {
+        color: white;
+        font-size: 10px;
+        height: 100%;
+        width: 100%;
+        padding: 4px 0 0 4px; }
+  .slick-carousel .contents {
+    height: 100%;
+    width: 100vw; }
+    .slick-carousel .contents div {
+      position: relative; }
+    .slick-carousel .contents img {
       min-width: 100%;
       height: 100%; }
-    .carousel .contents li .overlay {
+    .slick-carousel .contents .overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -710,88 +729,71 @@ a {
       width: 100%;
       height: 100%;
       z-index: 2; }
-    .carousel .contents li .card {
+    .slick-carousel .contents .card {
       position: absolute;
-      top: 30vh;
+      top: 20%;
       z-index: 3;
       color: white;
       font-size: 1.5rem;
       text-align: center;
       width: 50%;
       left: 25%; }
-      .carousel .contents li .card h1 {
+      .slick-carousel .contents .card h1 {
         text-transform: uppercase; }
-      .carousel .contents li .card a {
+      .slick-carousel .contents .card a {
         display: block;
         width: 230px;
         color: white;
         font-size: 1.3rem;
         text-transform: uppercase;
         padding: 20px 10px;
-        border-radius: 5px; }
-        .carousel .contents li .card a i {
+        border-radius: 5px;
+        margin: 0 auto; }
+        .slick-carousel .contents .card a i {
           margin-left: 10px; }
       @media screen and (min-width: 1160px) {
-        .carousel .contents li .card {
-          text-align: left;
+        .slick-carousel .contents .card {
           width: 25%;
-          left: 20%;
-          top: 30%; }
-          .carousel .contents li .card a {
-            margin: 0; } }
-  .carousel .web-design a,
-  .carousel .web-design-wrap a {
+          top: 25%;
+          text-align: left;
+          left: 15%; }
+          .slick-carousel .contents .card a {
+            margin: 0 0; } }
+  .slick-carousel .web-design a,
+  .slick-carousel .web-design-wrap a {
     background-color: #926fb1; }
-    .carousel .web-design a:hover,
-    .carousel .web-design-wrap a:hover {
+    .slick-carousel .web-design a:hover,
+    .slick-carousel .web-design-wrap a:hover {
       background-color: #79539a; }
-  .carousel .it-support a {
+  .slick-carousel .it-support a {
     background-color: #4183d7; }
-    .carousel .it-support a:hover {
+    .slick-carousel .it-support a:hover {
       background-color: #286abd; }
-  .carousel .telecoms-services a {
+  .slick-carousel .telecoms-services a {
     background-color: #d64541; }
-    .carousel .telecoms-services a:hover {
+    .slick-carousel .telecoms-services a:hover {
       background-color: #bc2c28; }
-  .carousel .bespoke-software a {
+  .slick-carousel .bespoke-software a {
     background-color: #67809f; }
-    .carousel .bespoke-software a:hover {
+    .slick-carousel .bespoke-software a:hover {
       background-color: #526781; }
-  .carousel .digital-marketing a {
+  .slick-carousel .digital-marketing a {
     background-color: #2ecc71; }
-    .carousel .digital-marketing a:hover {
+    .slick-carousel .digital-marketing a:hover {
       background-color: #25a25a; }
-  .carousel .cyber-security a {
+  .slick-carousel .cyber-security a {
     background-color: #f62459; }
-    .carousel .cyber-security a:hover {
+    .slick-carousel .cyber-security a:hover {
       background-color: #de093f; }
-  .carousel .contents {
+  .slick-carousel .contents {
     min-width: 100%;
-    height: calc(100vh - 128px);
-    position: relative;
-    animation: carousel 30s infinite;
-    overflow: hidden;
-    width: 700vw; }
+    height: calc(100vh - 128px); }
     @media screen and (min-width: 768px) {
-      .carousel .contents {
+      .slick-carousel .contents {
         height: calc(100vh - 93px); } }
     @media screen and (min-width: 1160px) {
-      .carousel .contents {
+      .slick-carousel .contents {
         height: calc(100vh - 210px); } }
-    .carousel .contents .web-design {
-      left: 0; }
-    .carousel .contents .it-support {
-      left: 100vw; }
-    .carousel .contents .telecoms-services {
-      left: 200vw; }
-    .carousel .contents .bespoke-software {
-      left: 300vw; }
-    .carousel .contents .digital-marketing {
-      left: 400vw; }
-    .carousel .contents .cyber-security {
-      left: 500vw; }
-    .carousel .contents .web-design-wrap {
-      left: 600vw; }
 
 .cards {
   width: 90%;
