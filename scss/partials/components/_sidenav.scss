@@ -1,0 +1,152 @@
+.pushy-open-right{
+    .pushy{
+        width: 350px;
+    }
+    #container{
+        transform: translate3d(-350px, 0, 0);
+        transition: transform 0.5s cubic-bezier(.28,.57,.72,.78);
+    }
+}
+
+.pushy{ 
+    background: #333645;
+    .links{
+        ul{
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.25);
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+        .title{
+            height: 100%;
+        }
+        li{
+            padding: 5px 0;
+            text-transform: uppercase;
+            font-size: 1rem;
+
+            &.sub{
+                height: 53px;
+                font-size: 0.875rem;
+                background-color: rgba(0,0,0,0.25);
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+                i{
+                    margin-right: 15px;
+                }
+                a{
+                    height: 51px;
+                }
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+    .tabs{
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $md-lg){
+            display: none;
+        }
+
+        .container{
+            padding: 30px;
+            a{
+                color: white;
+            }
+            .btn{
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 3px;
+                outline: 1px solid rgba(0,0,0,0.25);
+                font-size: 1.125rem;
+                padding: 22px 0;
+                margin-top: 20px;
+                &:first-child{
+                    margin-top: 0;
+                }
+                &:hover{
+                    background: #404353;
+                }
+            }
+            .category{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+    
+                i{
+                    align-self: center;
+                    margin-bottom: 10px;
+                }
+                span{
+                    color: white;
+                    align-self: center;
+                    font-size: 0.75rem;
+                    &:last-of-type{
+                        padding-top: 5px;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+            ul{
+                margin-top: 20px;
+                background: rgba(0, 0, 0, 0.25);
+
+                li{
+                    border-top: .5px solid rgba(0,0,0,0.45);
+                    border-bottom: 1px solid rgb(47,50,60);
+                    &:first-of-type{
+                        border-top: none;
+                    }
+                    &:last-of-type{
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            // WEB DESIGN -------------------------/
+            .web-design{    
+                i{
+                    color: $cl-web-design;
+                }
+            }
+
+            // IT SUPPORT -------------------------/
+            .it-support{
+                i{
+                    color: $cl-it-support;
+                }
+            }
+
+            // TELECOMS SERVICES -------------------------/
+            .telecoms-services{
+                i{
+                    color: $cl-telecoms-services;
+                }
+            }
+
+            // BESPOKE SOFTWARE -------------------------/
+            .bespoke-software{
+                i{
+                    color: $cl-bespoke-software;
+                }
+            }
+
+            // DIGITAL MARKETING -------------------------/
+            .digital-marketing{
+                i{
+                    color: $cl-digital-marketing;
+                }
+            }
+
+            // CYBER SECURITY -------------------------/
+            .cyber-security{
+                i{
+                    color: $cl-cyber-security;
+                }
+            }
+        }
+    }
+}

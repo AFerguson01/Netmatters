@@ -59,11 +59,11 @@
         .web-design{
 
             &:hover{
-                background-color: #926fb1;
+                background-color: $cl-web-design;
             }
         
             i{
-                color: #926fb1;
+                color: $cl-web-design;
             }
         }
 
@@ -71,11 +71,11 @@
         .it-support{
 
             &:hover{
-                background-color: #4183d7;
+                background-color: $cl-it-support;
             }
         
             i{
-                color: #4183d7;
+                color: $cl-it-support;
             }
         }
 
@@ -83,11 +83,11 @@
         .telecoms-services{
 
             &:hover{
-                background-color: #d64541;
+                background-color: $cl-telecoms-services;
             }
         
             i{
-                color: #d64541;
+                color: $cl-telecoms-services;
             }
         }
 
@@ -95,11 +95,11 @@
         .bespoke-software{
 
             &:hover{
-                background-color: #67809f;
+                background-color: $cl-bespoke-software;
             }
         
             i{
-                color: #67809f;
+                color: $cl-bespoke-software;
             }
         }
 
@@ -107,11 +107,11 @@
         .digital-marketing{
 
             &:hover{
-                background-color: #2ecc71;
+                background-color: $cl-digital-marketing;
             }
         
             i{
-                color: #2ecc71;
+                color: $cl-digital-marketing;
             }
         }
 
@@ -119,12 +119,12 @@
         .cyber-security{
 
             &:hover{
-                background-color: #f62459;
+                background-color: $cl-cyber-security;
             }
             border-right: 1px solid rgba(255,255,255,0.1);
         
             i{
-                color: #f62459;
+                color: $cl-cyber-security;
             }
         }
     }
@@ -164,10 +164,10 @@
             }
         }        
     }
-    .web-dropdown{ background-color: #79539a; }
-    .it-dropdown{ background-color: #286abd; }
-    .telecoms-dropdown{ background-color: #bc2c28; }
-    .software-dropdown{ background-color: #526781; }
-    .marketing-dropdown{ background-color: #25a25a; }
-    .security-dropdown{ background-color: #de093f; }
+    .web-dropdown{ background-color: $cl-web-design-dark; }
+    .it-dropdown{ background-color: $cl-it-support-dark; }
+    .telecoms-dropdown{ background-color: $cl-telecoms-services-dark; }
+    .software-dropdown{ background-color: $cl-bespoke-software-dark; }
+    .marketing-dropdown{ background-color: $cl-digital-marketing-dark; }
+    .security-dropdown{ background-color: $cl-cyber-security-dark; }
 }
