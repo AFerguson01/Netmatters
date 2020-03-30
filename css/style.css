@@ -848,6 +848,9 @@ button#gdpr-cookie-advanced {
 .slick-carousel {
   width: 100%;
   overflow: hidden; }
+  .slick-carousel .slick-list,
+  .slick-carousel .slick-track {
+    height: 100%; }
   .slick-carousel .slick-dots {
     position: absolute;
     bottom: 20%; }
