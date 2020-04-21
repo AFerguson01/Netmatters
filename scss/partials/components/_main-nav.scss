@@ -16,6 +16,9 @@
         margin-right: auto;
         max-width: 50vw;
     }
+    #main-logo{
+        cursor: pointer;
+    }
     a{
         @include btn;
         display: none;
