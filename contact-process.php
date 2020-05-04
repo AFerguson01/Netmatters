@@ -5,7 +5,7 @@ $lastName = $_POST["lastname"];
 $phone = $_POST["phone"];
 $message = $_POST["message"];
 
-include $_SERVER['DOCUMENT_ROOT'].'/connection-contact.php';
+include $_SERVER['DOCUMENT_ROOT'].'/db-connection.php';
 if ($db == NULL){}
 else{
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -30,7 +30,7 @@ else{
         }
 
         $message = test_input($_POST["message"]);
-        if (!preg_match("/^[a-zA-Z0-9]*$/", $message)){
+        if (!preg_match("/^[a-zA-Z0-9\. \-]*$/", $message)){
             header("Location: ../contact.php?valid=messageError");
             exit();
         }
