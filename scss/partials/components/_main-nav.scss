@@ -7,9 +7,12 @@
     padding: 10px 20px;
 
     @media screen and (min-width: $md-lg){
-        height: 110px;
-        width: 80%;
+        width: 92%;
         margin: 0 auto;
+        height: 110px;
+    }
+    @media screen and (min-width: $xl){
+        width: 85%;
     }
 
     .logo{
@@ -34,12 +37,11 @@
             margin-right: 10px;
         }
 
-        @media screen and (min-width: $lg){
+        @media screen and (min-width: $mdplus){
             display: inline-block;
         }
         &[href*="contact"]{
             background-color: #999aa2;
-            margin-right: -120px;
 
             &:hover{
                 background: #7f8086;
@@ -50,13 +52,12 @@
         }
     }
     .icon-phone{
-        margin-right: 50px;
         height: 54px;
         width: 54px;
         font-size: 30px;
         transform: scaleX(-1);
 
-        @media screen and (min-width: $md){
+        @media screen and (min-width: $mdplus){
             display: none;
         }
     }
@@ -68,14 +69,14 @@
         border-radius: 3px;
         margin-top: 10px;
 
-        @media screen and (min-width: $md){
+        @media screen and (min-width: $md-lg){
             order: 0;
-            width: 30%;
+            width: 200px;
             margin: auto 20px auto 0;
             height: 54px;
             border: none;
         }
-        @media screen and (min-width: $lg){
+        @media screen and (min-width: $xxl){
             width: 200px;
         }
 
@@ -91,17 +92,11 @@
                 outline: none;
             }
 
-            @media screen and (min-width: $md){
+            @media screen and (min-width: $md-lg){
                 height: 54px;
                 background: none;
                 border: 1px solid rgba(153, 154, 162, 0.5);
                 border-radius: 3px 0 0 3px;
-            }
-            @media screen and (min-width: $lg){
-                display: none;
-            }
-            @media screen and (min-width: $xl){
-                display: block;
             }
         }
         button{
@@ -114,7 +109,7 @@
             &:hover{
                 background: #7f8086;
             }
-            @media screen and (min-width: $md){
+            @media screen and (min-width: $md-lg){
                 height: 54px;
                 margin-bottom: 5px;
                 padding: 0;
@@ -123,7 +118,7 @@
                 color: white;
                 background: #999aa2;
             }
-            @media screen and (min-width: $lg){
+            @media screen and (min-width: $xxl){
                 border-radius: 3px;
             }
         }
